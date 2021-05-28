@@ -9,7 +9,6 @@ use App\OrderProduct;
 use App\Product;
 use Cartalyst\Stripe\Exception\CardErrorException;
 use Cartalyst\Stripe\Laravel\Facades\Stripe;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
 class CheckoutController extends Controller
