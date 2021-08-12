@@ -8,7 +8,6 @@ use App\Images;
 use App\Order;
 use App\Product;
 use App\User;
-use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
