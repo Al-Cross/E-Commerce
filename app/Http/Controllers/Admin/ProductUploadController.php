@@ -8,7 +8,6 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreProductRequest;
 use App\Images;
 use App\Product;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
@@ -45,8 +44,7 @@ class ProductUploadController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param Http\Requests\StoreProductRequest $request
-     *
+     * @param  Http\Requests\StoreProductRequest  $request
      * @return \Illuminate\Http\Response
      */
     public function store(StoreProductRequest $request)
@@ -77,8 +75,7 @@ class ProductUploadController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param App\Product  $product
-     *
+     * @param  App\Product  $product
      * @return \Illuminate\Http\Response
      */
     public function edit(Product $product)
@@ -94,8 +91,7 @@ class ProductUploadController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param App\Product  $product
-     *
+     * @param  App\Product  $product
      * @return \Illuminate\Http\Response
      */
     public function update(Product $product, StoreProductRequest $request)
@@ -128,8 +124,8 @@ class ProductUploadController extends Controller
     /**
      * Delete the selected image.
      *
-     * @param App\Product $product
-     * @param int  $imageId
+     * @param  App\Product  $product
+     * @param  int  $imageId
      */
     public function removeImage(Product $product, $imageId)
     {
@@ -170,7 +166,7 @@ class ProductUploadController extends Controller
     /**
      * Store the images.
      *
-     * @param array $images
+     * @param  array  $images
      */
     public function saveImages($productId, $images = null)
     {
@@ -192,9 +188,9 @@ class ProductUploadController extends Controller
     /**
      * Store the values of the product attributes.
      *
-     * @param array $fromInputField
-     * @param array $fromSelect
-     * @param App\Product $product
+     * @param  array  $fromInputField
+     * @param  array  $fromSelect
+     * @param  App\Product  $product
      */
     public function addAttributes($input, $product)
     {
