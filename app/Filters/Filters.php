@@ -45,7 +45,7 @@ abstract class Filters
     /**
      * Get the filters from the request. If there aren't any, return empty array.
      *
-     * @param  array $keys The filters
+     * @param  array  $keys  The filters
      * @return array
      */
     public function intersect($keys)

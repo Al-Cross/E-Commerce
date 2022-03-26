@@ -109,7 +109,7 @@ class User extends Authenticatable
     /**
      * Update the user's account details.
      *
-     * @param  \Illuminate\Http\Request $request
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function updateProfile(Request $request)

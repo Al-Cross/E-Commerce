@@ -64,11 +64,10 @@ class StoreProductRequest extends FormRequest
      * If the method of the request is a POST,
      * then return the rules with additional rule.
      *
-     * @param array  $rules     Array of rules determined so far
-     * @param string $attribute form element that will have rules applied
-     * @param string $rule      the actual rule
-     *
-     * @return array            the array with the rule added, else the original
+     * @param  array  $rules  Array of rules determined so far
+     * @param  string  $attribute  form element that will have rules applied
+     * @param  string  $rule  the actual rule
+     * @return array the array with the rule added, else the original
      */
     public function postMergeRule($rules, $attribute, $rule = [])
     {
