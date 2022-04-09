@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Category;
 use App\Filters\ProductFilters;
 use App\Product;
-use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {

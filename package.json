@@ -26,7 +26,7 @@
     "dependencies": {
         "@stripe/stripe-js": "^1.4.0",
         "desoslide": "^2.2.0",
-        "moment": "^2.25.3",
+        "moment": "^2.29.2",
         "vuejs-dialog": "^1.4.1"
     }
 }
