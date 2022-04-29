@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 class CartController extends Controller
 {
     /**
@@ -26,8 +24,7 @@ class CartController extends Controller
     /**
      * Update the contents of the cart.
      *
-     * @param int $id
-     *
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function update($id)
@@ -45,8 +42,7 @@ class CartController extends Controller
     /**
      * Remove the specified item from the cart.
      *
-     * @param int  $id
-     *
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
