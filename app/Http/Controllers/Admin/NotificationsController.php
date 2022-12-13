@@ -21,7 +21,7 @@ class NotificationsController extends Controller
     /**
      * Mark a notification as read.
      *
-     * @param mixed $notificationId
+     * @param  mixed  $notificationId
      */
     public function destroy($notificationId)
     {

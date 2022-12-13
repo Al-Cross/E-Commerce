@@ -8,7 +8,6 @@ use App\Images;
 use App\Order;
 use App\Product;
 use App\User;
-use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
@@ -72,8 +71,7 @@ class DashboardController extends Controller
     /**
      * Remove the specified user from storage.
      *
-     * @param App\User  $user
-     *
+     * @param  App\User  $user
      * @return \Illuminate\Http\Response
      */
     public function destroy(User $user)
@@ -145,8 +143,7 @@ class DashboardController extends Controller
     /**
      * Remove the coupon from storage.
      *
-     * @param int $id
-     *
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function destroyCoupon(Coupon $coupon)
