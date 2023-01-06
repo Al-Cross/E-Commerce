@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\User;
 use App\Wishlist;
-use Illuminate\Http\Request;
 
 class WishlistController extends Controller
 {
@@ -31,7 +30,7 @@ class WishlistController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  int $userId
+     * @param  int  $userId
      * @return \Illuminate\Http\Response
      */
     public function store($userId)
@@ -46,7 +45,7 @@ class WishlistController extends Controller
      * Remove the specified resource from storage.
      *
      * @param  int  $userId
-     * @param  int $productId
+     * @param  int  $productId
      * @return \Illuminate\Http\Response
      */
     public function destroy($userId, $productId)

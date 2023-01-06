@@ -9,7 +9,6 @@ use App\OrderProduct;
 use App\Product;
 use Cartalyst\Stripe\Exception\CardErrorException;
 use Cartalyst\Stripe\Laravel\Facades\Stripe;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
 class CheckoutController extends Controller
@@ -36,7 +35,7 @@ class CheckoutController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request $request
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function store(CheckoutRequest $request)
@@ -108,9 +107,8 @@ class CheckoutController extends Controller
     /**
      * Save the order in the respective DB tables.
      *
-     * @param App\Http\Requests $request
-     * @param CardException $error
-     *
+     * @param  App\Http\Requests  $request
+     * @param  CardException  $error
      * @return object
      */
     protected function addToOrdersTables($request, $error = null)
@@ -151,8 +149,8 @@ class CheckoutController extends Controller
     /**
      * Save the order in the respective DB tables.
      *
-     * @param App\Http\Requests $request
-     * @param CardException $error
+     * @param  App\Http\Requests  $request
+     * @param  CardException  $error
      */
     protected function addToOrdersTablesPaypal($name, $email, $error = null)
     {

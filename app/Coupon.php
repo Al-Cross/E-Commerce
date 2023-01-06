@@ -11,7 +11,7 @@ class Coupon extends Model
     /**
      * Fetch the coupon by its code.
      *
-     * @param  string $code
+     * @param  string  $code
      * @return object
      */
     public static function findByCode($code)
@@ -22,7 +22,7 @@ class Coupon extends Model
     /**
      * Find the value of the discount according to its type.
      *
-     * @param  int $total
+     * @param  int  $total
      * @return int
      */
     public function discount($total)
